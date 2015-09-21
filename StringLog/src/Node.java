@@ -1,30 +1,30 @@
-public class Node {
-	private String data;
-	private Node ptr;
+public class Node <T>{
+	private T data;
+	private Node<T> ptr;
 
-	public Node(String data) {
+	public Node(T data) {
 		this.data = data;
 		this.ptr = null;
 	}
 
-	public Node(String data, Node ptr) {
+	public Node(T data, Node<T> ptr) {
 		this.data = data;
 		this.ptr = ptr;
 	}
 
-	public String getData() {
+	public T getData() {
 		return data;
 	}
 
-	public void setData(String data) {
+	public void setData(T data) {
 		this.data = data;
 	}
 
-	public Node getPtr() {
+	public Node<T> getPtr() {
 		return ptr;
 	}
 
-	public void setPtr(Node ptr) {
+	public void setPtr(Node<T> ptr) {
 		this.ptr = ptr;
 	}
 
